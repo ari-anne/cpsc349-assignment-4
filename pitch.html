@@ -11,7 +11,7 @@
 
 <body>
 
-    <form>
+    <form class="form-group">
         <fieldset>
             <legend>Team Members</legend>
             <p>
@@ -38,16 +38,26 @@
 
         <fieldset>
             <legend>Name</legend>
-            <p>
-                <input type="radio" id="app">
-                <label for="app">App Name</label>
-                <input type="text" id="app">
-            </p>
-            <p>
-                <input type="radio" id="team">
-                <label for="team">Team Name</label>
-                <input type="text" id="team">
-            </p>
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <div class="input-group-text">
+                        <input class="btn" name="Name_selector" id="option1" type="radio" aria-label="Select app name">
+                        App Name:
+                    </div>
+                </div>
+                <input type="text" class="form-control" aria-label="App Name" placeholder="App Name">
+            </div>
+
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <div class="input-group-text">
+                        <input class="btn" name="Name_selector" id="option2" type="radio" aria-label="Select team name">
+                        Team Name:
+                    </div>
+                </div>
+                <input type="text" class="form-control" aria-label="Team Name" placeholder="Team Name">
+            </div>
+
         </fieldset>
     </form>
 
